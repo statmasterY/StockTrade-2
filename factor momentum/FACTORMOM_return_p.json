@@ -1,0 +1,41 @@
+{
+    "Desc": [
+        "factor_momentum策略"
+    ],
+    "TASKID": "factormom_pool.SH_EXPORT", 
+    "PACKAGEPATH": "YangqinStrategies",
+    "STRATEGY": "factor_momentum", 
+    "MODE": "FACTORMOM_return_p", 
+    "UseIndexDB": false, 
+    "FactorData": "//192.168.2.39/YangqinStrategies/factordata.csv",
+    "AdjFQ": "QFQ",
+    "Slippage": 0, 
+    "DateInterval": 1, 
+    "Path": "//192.168.2.39/YangqinStrategies/factor_momentum/", 
+    "Arguments": {
+        "start_date":"2023-04-30",
+        "end_date":"2023-07-05",
+        "backdays": 252,
+        "period": 5,
+        "return_period":5,
+        "factor_period":21,
+        "amount_num":5,
+        "nums_fin": 10,
+        "factor_quantile": 20,
+        "if_industry_market_cap_norm": true,
+        "sample_weight":"equal_weight",
+        "regression_period":30,
+        "method_return_cal": "long_short",
+        "method_factor_weight": "return",
+        "method_stock_weight": "return",
+        "method_factor": "long",
+        "fee_rate":0.003,
+        "nums_xg": 30,
+        "if_xgboost": false,
+        "if_indicators": false,
+        "n_splits": 10,
+        "verbose": 1,
+        "index": "date",
+        "y_index": "return_norm"
+    }
+}
